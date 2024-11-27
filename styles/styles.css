@@ -1,0 +1,102 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../images/demo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Services Section */
+#services .card-img-top {
+    height: auto;
+    max-height: 200px; /* Limit height for consistent appearance */
+    object-fit: cover;
+    width: 100%; /* Ensure images take full width of the card */
+    border-radius: 5px; /* Slight rounding for a polished look */
+}
+
+/* Gallery Section */
+#gallery img {
+    height: auto;
+    max-height: 250px; /* Limit height for gallery images */
+    width: 100%; /* Ensure images take the full width of their column */
+    object-fit: cover; /* Maintain aspect ratio without distortion */
+    border-radius: 10px; /* Rounded corners for better aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Typography */
+h1, h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+    background-color: #000; /* Dark background for footer */
+    color: #fff; /* Light text color for contrast */
+    padding: 10px 0; /* Add padding for spacing */
+    text-align: center; /* Center-align text */
+}
+
+/* Contact Form */
+form {
+    max-width: 500px;
+    margin: 0 auto; /* Center-align the form */
+}
+form .form-control {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+}
+form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+    .hero {
+        min-height: 40vh; /* Reduce hero height for smaller screens */
+        font-size: 0.9rem; /* Adjust text size */
+        padding: 20px; /* Add padding for better spacing */
+    }
+    #services .card-img-top,
+    #gallery img {
+        max-height: 150px; /* Reduce image heights for smaller devices */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 50vh; /* Adjust hero height for medium devices */
+    }
+    #services .card-img-top,
+    #gallery img {
+        max-height: 180px; /* Slightly larger images for tablets */
+    }
+}
